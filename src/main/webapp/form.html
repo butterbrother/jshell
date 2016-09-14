@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Server state check</title>
+<body>
+
+<p>
+<h4>Server state check</h4>
+<p>
+
+<form method="GET" name="checkval" action="">
+    <table border=0>
+        <tr><td>Check value:</td><td><input type="text" name="val"></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
+    </table>
+    <input type="submit" value="Check">
+</form>
+
+<hr>
+
+<form method="POST" action="" enctype="multipart/form-data">
+    <table border=0>
+        <tr><td>New values list:</td><td><input type="file" name="file"></td></tr>
+	<tr><td>Range:</td><td><input type="text" name="valrange"></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
+        <tr><td><input type="submit" value="Upload"></td></tr>
+    </table>
+</form>
+
+<hr>
+
+<form method="GET" name="getvals" action="">
+    <table border=0>
+        <tr><td>Values range:</td><td><input type="text" name="valrange"></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
+    </table>
+    <input type="submit" value="Download">
+</form>
